@@ -14,12 +14,17 @@ let price = 0.21 * chilometri;
 //Va applicato uno sconto del 20% per i minorenni
 //Va applicato uno sconto del 40% per gli over 65
 
+let ticketBaby = price * 20 / 100;
+
+let ticketOver = price * 40 / 100;
+
 if (age <= 17) {
-    console.log(price * 20 / 100);
+    console.log(ticketBaby);
+    document.getElementById("finalPrice").innerHTML= ticketBaby.toFixed(2) + " €";
 } else if (age > 65) {
-    console.log(price * 40 / 100);
+    console.log(ticketOver);
+    document.getElementById("finalPrice").innerHTML= ticketOver.toFixed(2) + " €";
 } else {
     console.log(price);
+    document.getElementById("finalPrice").innerHTML= price.toFixed(2) + " €";
 }
-
-document.getElementById("finalPrice").innerHTML= price.toFixed(2) + " €";
