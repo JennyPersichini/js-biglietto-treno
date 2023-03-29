@@ -14,9 +14,11 @@ let price = 0.21 * chilometri;
 //Va applicato uno sconto del 20% per i minorenni
 //Va applicato uno sconto del 40% per gli over 65
 
-let ticketBaby = price * 20 / 100;
+let scontoBaby = price * 20 / 100;
+let ticketBaby = price - scontoBaby;
 
-let ticketOver = price * 40 / 100;
+let scontoOver = price * 40 / 100;
+let ticketOver = price - scontoOver;
 
 if (age <= 17) {
     console.log(ticketBaby);
