@@ -1,0 +1,14 @@
+.bg-brown {
+    background-color: rgba(54, 1, 1, 0.822);
+}
+
+.bg-beige {
+    background-color: rgba(245, 234, 220, 0.822);
+}
+
+.opacity-img {
+    opacity: 0.7;
+    width: 70%;
+    height: 100px;
+    margin: 5px;
+}

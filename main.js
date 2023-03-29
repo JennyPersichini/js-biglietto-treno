@@ -22,4 +22,4 @@ if (age <= 17) {
     console.log(price);
 }
 
-document.getElementById("finalPrice").innerHTML= price.toFixed(2) + "€";
+document.getElementById("finalPrice").innerHTML= price.toFixed(2) + " €";
